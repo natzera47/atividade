@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dois números</title>
+</head>
+<body>
+    <h1>O número é maior ou menor?</h1>
+    <p>Numero 1: <span id="numeroPrimeiro"></span></p>
+    <p>Numero 2: <span id="numeroSegundo"></span></p>
+    <p>Qual numero é maior: <span id="maiorOUmenor"></span></p>
+    <script>
+        let numero1;
+        let numero2;
+        let resultado;
+
+        numero1 = Number(prompt("Digite o primeiro número"));
+        numero2 = Number(prompt("Digite o segundo número"));
+
+        if(numero1>numero2){
+            resultado = "O número1 é maior";
+        }else{
+            resultado = "O número2 é maior";
+        }
+
+        //console.log(permissao); Para mostrar no console do browse 
+        document.getElementById('numeroPrimeiro').innerHTML = numero1;
+        document.getElementById('numeroSegundo').innerHTML = numero2;
+        document.getElementById('maiorOUmenor').innerHTML = resultado;
+
+        
+        
+
+    </script>
+</body>
+</html>

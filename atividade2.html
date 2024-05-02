@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duas Pessoas</title>
+</head>
+<body>
+    <h1> Leia os nomes e os pesos de duas pessoas e em seguida, imprima os dados da pessoa
+        mais obesa.</h1>
+    <p>Nome da pessoa 1: <span id="nomePrimeiro"></span></p>
+    <p>Peso da pessoa 1: <span id="pesoPrimeiro"></span></p>
+    <p>Nome da pessoa 2: <span id="nomeSegundo"></span></p>
+    <p>Peso da pessoa 1: <span id="pesoSegundo"></span></p>
+    <p>Quem é o obeso?: <span id="obesoOUnao"></span></p>
+    <script>
+        let nome1;
+        let peso1;
+        let nome2;
+        let peso2;
+        let maisobeso;
+
+        nome1 = prompt("Digite o primeiro nome");
+        peso1 = Number(prompt("Digite o peso dessa pessoa"));
+        nome2 = prompt("Digite o segundo nome");
+        peso2 = Number(prompt("Digite o peso dessa pessoa"));
+
+        if(peso1>peso2){
+            maisobeso = "A primeira pessoa é a mais obesa";
+        }else{
+            maisobeso = "A segunda pessoa é a mais obesa";
+        }
+
+        //console.log(permissao); Para mostrar no console do browse 
+        document.getElementById('nomePrimeiro').innerHTML = nome1;
+        document.getElementById('pesoPrimeiro').innerHTML = peso1;
+        document.getElementById('nomeSegundo').innerHTML = nome2;
+        document.getElementById('pesoSegundo').innerHTML = peso2;
+        document.getElementById('obesoOUnao').innerHTML = maisobeso;
+
+        
+        
+
+    </script>
+</body>
+</html>

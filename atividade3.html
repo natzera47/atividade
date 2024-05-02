@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é a mais nova?</title>
+</head>
+<body>
+    <h1> Leia os anos de nascimento de duas pessoas e depois calcule suas idades. Em seguida,
+        imprima o nome e a idade de cada uma delas e indique qual delas é a mais nova.
+        </h1>
+    <p>Nome da pessoa 1: <span id="nomePrimeiro"></span></p>
+    <p>Idade da pessoa 1: <span id="idadePrimeiro"></span></p>
+    <p>Nome da pessoa 2: <span id="nomeSegundo"></span></p>
+    <p>Idade da pessoa 1: <span id="idadeSegundo"></span></p>
+    <p>Quem é mais novo(a)?: <span id="oMaisNovo"></span></p>
+    <script>
+        let nome1;
+        let idade1;
+        let nome2;
+        let idade2;
+        let maisnovo;
+
+        nome1 = prompt("Digite o primeiro nome");
+        idade1 = Number(prompt("Digite a idade dessa pessoa"));
+        nome2 = prompt("Digite o segundo nome");
+        idade2 = Number(prompt("Digite a idade dessa pessoa"));
+
+        if(idade1>idade2){
+            maisnovo = "A segunda pessoa é a mais nova";
+           
+        }else{
+            maisnovo = "A primeira pessoa é a mais nova";
+        }
+        if(idade1==idade2){
+                maisnovo = "As duas pessoas tem a mesma idade"
+            }
+
+        //console.log(permissao); Para mostrar no console do browse 
+        document.getElementById('nomePrimeiro').innerHTML = nome1;
+        document.getElementById('idadePrimeiro').innerHTML = idade1;
+        document.getElementById('nomeSegundo').innerHTML = nome2;
+        document.getElementById('idadeSegundo').innerHTML = idade2;
+        document.getElementById('oMaisNovo').innerHTML = maisnovo;
+
+        
+        
+
+    </script>
+</body>
+</html>
